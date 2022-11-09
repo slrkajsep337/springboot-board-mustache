@@ -1,0 +1,25 @@
+<!--하나조회하는 페이지-->
+{{>layouts/header}}
+<table class="table">
+    <thead>
+    <tr class="table-primary">
+        <th scope="col">id</th>
+        <th scope="col">title</th>
+        <th scope="col">content</th>
+    </tr>
+    </thead>
+    <tbody class=table-group-divider">
+    {{#article}}
+        <tr class="table-danger">
+            <th scope="row">{{id}}</th>
+            <td>{{title}}</td>
+            <td>{{content}}</td>
+        </tr>
+    {{/article}}
+    </tbody>
+</table>
+<a href="/articles/new" class="card-link">new article</a>
+<a href="/articles" class="card-link">list article</a>
+<a href="/articles/{{id}}/edit" class="btn btn-danger">Edit</a>
+<a href="/articles/{{id}}/delete" class="btn btn-danger">Delete</a>
+{{>layouts/footer}}
