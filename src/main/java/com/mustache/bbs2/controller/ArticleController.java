@@ -41,7 +41,7 @@ public class ArticleController {
         log.info(form.toString());
         Article savedArticle = articleRepository.save(form.toEntity());
         return String.format("redirect:/articles/%d",savedArticle.getId());
-//        return String.format("id:%d",savedArticle.getId());
+//        return String.format("id:%d",fesavedArticle.getId());
     }
 
     @GetMapping("/{id}") //한 id에 해당하는 정보 보여주는 페이지

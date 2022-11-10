@@ -16,5 +16,5 @@ spring:
     show-sql: true
     database-platform:
     database:
-    hibernate.ddl-auto: validate
+    hibernate.ddl-auto: update
 
